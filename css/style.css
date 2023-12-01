@@ -377,7 +377,7 @@ textarea{
   }
 }
 .main-footer{
-  background-color: #000;
+  background-color:#000;
   color: #fff;
   min-height: 200px;
   display: flex;
@@ -386,12 +386,17 @@ textarea{
 .main-footer .footer {
   display: flex;
   flex-direction: column;
+
 }
 .brand-col{
-  width: 15%;
+  margin-top: 1rem;
 }
+
+
 .footer__item{
   margin-bottom: 1.5rem;
+  
+
 }
 .footer__item a {
   text-decoration: none;
@@ -417,25 +422,47 @@ textarea{
   border-radius: 10px;
   padding: 1rem 0.5rem;
   max-width: 86px;
+  margin-left: 1rem;
 }
 .footer__enemad img {
   width: 100px;
   height: auto;
 
 }
+.copy-right{
+  display: none;
+  width: 0;
+}
+.copy-right-mobile{
+  display: block;
+  color: #ccc;
+
+}
+
 @media screen and (min-width:768px) {
   .main-footer .footer{
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content:space-between;
   }
   .footer__item{
     margin-bottom: 0;
-    margin-left:2rem ;
+    margin-right: 4rem;
   }
   .footer__enemad{
     margin: 1rem;
   }
+  .copy-right{
+    display: block;
+    width: 80px;
+  }
+  .copy-right-mobile{
+    display: none;
+  }
+  
+  
 }
+
 
 
 
